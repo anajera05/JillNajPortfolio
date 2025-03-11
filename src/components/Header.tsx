@@ -13,7 +13,7 @@ const StyledLogo = styled.img`
 
 const StyledContainer = styled.div`
     display: inline-flex;
-    width: 50%;
+    width: 80%;
     flex-direction: column;
     align-items: center;
 `

@@ -18,7 +18,22 @@ const GlobalStyle = createGlobalStyle`
         background-color: #E8FAF7;
         margin: 0;
         padding: 0;
-        font-family: Helvetica, sans-serif;
+        font-family: sans-serif;
+    }
+    ::-webkit-scrollbar {
+        width: 0.5vw;
+        height: 0.5vw;
+        border: 0;
+        opacity: 0.2;
+    }
+    ::-webkit-scrollbar-track {
+        background: rgba(241, 241, 241, 0.3);
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #313d43;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #2d393e;
     }
 `;
 
@@ -49,7 +64,11 @@ const MainDiv = styled.div`
     height: 100%;
     width: 70%;
     display: flex;
-`;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+`
 
 function Root(){
     return(

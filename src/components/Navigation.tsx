@@ -12,7 +12,7 @@ const StyledList = styled.ul`
 const StyledNavItem = styled.li`
     margin: 2vh auto;
     display: flex;
-    font-size: calc(10px + 1vh);
+    font-size: calc(5px + 2vh);
     font-weight: bold;
     &.sub{
         margin: 0 auto 1vh auto;
@@ -41,7 +41,7 @@ export default function Navigation() {
                     <StyledLink to={"/2025AnimationReel"}>2025 Animation Reel</StyledLink>
                 </StyledNavItem>
                 <StyledNavItem className="sub">
-                    <StyledLink to={"/MiscAnimations"}>Misc Animations</StyledLink>
+                    <StyledLink to={"/MiscAnimations"}>Misc. Animations</StyledLink>
                 </StyledNavItem>
                 <StyledNavItem>
                     <StyledLink to={"/Fabrication"}>Fabrication</StyledLink>
