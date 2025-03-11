@@ -1,14 +1,23 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom"
 import Navigation from "./Navigation";
 
 const StyledHeader = styled.header`
     display: inline-flex;
     justify-content: center;
     width: 100%;
+    @media screen and (max-width: 750px){
+        display: flex;
+        padding-top: 1vh;
+        align-items: center;
+    }
 `
 
 const StyledLogo = styled.img`
     width: 100%;
+    @media screen and (max-width: 750px){
+        width: 40%;
+    }
 `
 
 const StyledContainer = styled.div`
@@ -16,15 +25,32 @@ const StyledContainer = styled.div`
     width: 80%;
     flex-direction: column;
     align-items: center;
+    @media screen and (max-width: 750px){
+        width: 100%;
+        justify-content: center;
+        flex-direction: row;
+    }
+`
+
+const StyledNav = styled.div`
+    display: flex;
+
+`
+
+const StyledLink = styled(Link)`
+    display: flex;
+    justify-content: center;
 `
 
 export default function Header() {
     return(
         <StyledContainer>
             <StyledHeader>
-                <StyledLogo src={"jillnaj_logo.png"} alt="Jillnaj logo" />
+                <StyledLink to={"/"}><StyledLogo src={"jillnaj_logo.png"} alt="Jillnaj logo" /></StyledLink>
             </StyledHeader>
-            <Navigation />
+            <StyledNav>
+                <Navigation />
+            </StyledNav>
         </StyledContainer>
     )
 }

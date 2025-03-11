@@ -19,6 +19,7 @@ const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         font-family: sans-serif;
+        overflow-x: hidden;
     }
     ::-webkit-scrollbar {
         width: 0.5vw;
@@ -47,6 +48,10 @@ const PageStylingDiv = styled.div`
     padding: 3vw;
     position: relative;
     box-sizing: border-box;
+    @media screen and (max-width: 750px){
+        padding: 0;
+        margin: 0;
+    }    
 `;
 
 const NavDiv = styled.div`
@@ -57,6 +62,11 @@ const NavDiv = styled.div`
     align-items: center;
     display: flex;
     box-sizing: border-box;
+    @media screen and (max-width: 750px){
+        height: 20%;
+        width: 100%;
+        justify-content: center;
+    }
 `;
 
 const MainDiv = styled.div`
@@ -64,10 +74,16 @@ const MainDiv = styled.div`
     height: 100%;
     width: 70%;
     display: flex;
+    padding: 0 2vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 5vh;
+    @media screen and (max-width: 750px){
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20%
+    }
 `
 
 function Root(){
@@ -76,7 +92,7 @@ function Root(){
             <GlobalStyle />
             <PageStylingDiv>
                 <NavDiv>
-                    <Header />
+                    <Header/>
                 </NavDiv>
                 <MainDiv>
                     <Routes>
