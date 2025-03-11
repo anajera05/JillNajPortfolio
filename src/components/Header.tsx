@@ -1,18 +1,30 @@
 import styled from "styled-components";
+import Navigation from "./Navigation";
+
 const StyledHeader = styled.header`
-    display: flex;
+    display: inline-flex;
     justify-content: center;
-    align-items: center;
+    width: 100%;
 `
+
 const StyledLogo = styled.img`
-    width: 40%;
+    width: 100%;
+`
+
+const StyledContainer = styled.div`
+    display: inline-flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
 `
 
 export default function Header() {
     return(
-        <StyledHeader>
-            <StyledLogo src={"jillnaj_logo.png"} alt="Jillnaj logo" />
-        </StyledHeader>
+        <StyledContainer>
+            <StyledHeader>
+                <StyledLogo src={"jillnaj_logo.png"} alt="Jillnaj logo" />
+            </StyledHeader>
+            <Navigation />
+        </StyledContainer>
     )
-
 }

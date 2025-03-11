@@ -1,5 +1,4 @@
 import Header from "./components/Header";
-import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import { createBrowserRouter, Route, RouterProvider, Routes} from "react-router";
 import Homepage from "./components/Main/Homepage.tsx"
@@ -36,17 +35,17 @@ const PageStylingDiv = styled.div`
 `;
 
 const NavDiv = styled.div`
-    width: 30%;
+    width: 25%;
     position: fixed;
     height: 70%;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: center;
     display: flex;
-    flex-direction: column;
     box-sizing: border-box;
 `;
 
 const MainDiv = styled.div`
-    margin-left: 30%;
+    margin-left: 25%;
     height: 100%;
     width: 70%;
     display: flex;
@@ -59,7 +58,6 @@ function Root(){
             <PageStylingDiv>
                 <NavDiv>
                     <Header />
-                    <Navigation />
                 </NavDiv>
                 <MainDiv>
                     <Routes>
