@@ -36,6 +36,7 @@ const PageStylingDiv = styled.div`
 `;
 
 const NavDiv = styled.div`
+    width: 30%;
     position: fixed;
     height: 70%;
     justify-content: center;
