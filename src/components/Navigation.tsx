@@ -67,7 +67,7 @@ const HamburgerIcon = styled.div`
         width: 4vw;
         height: 2vh;
         cursor: pointer;
-        padding-right: 2vw;
+        padding-right: 4vw;
     }
 
     div {
