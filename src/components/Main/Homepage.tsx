@@ -5,7 +5,7 @@ const VideoView = styled.img`
 `
 
 const Logo = styled.img`
-    @media screen and (max-width: 750px){
+    @media screen and (max-width: 768px){
         padding-top: 3vh;
         width: 70%
     }

@@ -17,8 +17,6 @@ const StyledList = styled.ul`
         background-color: whitesmoke;
         transition: right 0.5s ease;
         z-index: 10;
-        box-shadow: 10px 5px 5px 5px #2d393e;
-
         right: -100%;  
         display: flex;
         justify-content: center;
@@ -75,7 +73,7 @@ const HamburgerIcon = styled.div`
     div {
         width: 100%;
         height: 0.5vh;
-        background-color: #313d43;
+        background-color: #537979;
         border-radius: 5px;
     }
 `;

@@ -6,7 +6,7 @@ const StyledHeader = styled.header`
     display: inline-flex;
     justify-content: center;
     width: 100%;
-    @media screen and (max-width: 750px){
+    @media screen and (max-width: 768px){
         display: flex;
         padding-top: 1vh;
         align-items: center;
@@ -15,7 +15,7 @@ const StyledHeader = styled.header`
 
 const StyledLogo = styled.img`
     width: 100%;
-    @media screen and (max-width: 750px){
+    @media screen and (max-width: 768px){
         width: 40%;
     }
 `
@@ -25,7 +25,7 @@ const StyledContainer = styled.div`
     width: 80%;
     flex-direction: column;
     align-items: center;
-    @media screen and (max-width: 750px){
+    @media screen and (max-width: 768px){
         width: 100%;
         justify-content: center;
         flex-direction: row;

@@ -6,11 +6,20 @@ const StyledHeading = styled.h2`
     font-weight: normal;
     margin-bottom: 1vh;
 `
+const ProfileImage = styled.img`
+    width: 30vw;
+    @media screen and (max-width: 768px){
+        width: 70%
+    }
+`
 
 const MainContentDiv = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+    }
 `
 
 const TextDiv= styled.div`
@@ -18,6 +27,10 @@ const TextDiv= styled.div`
     flex-direction: column;
     color: #537979;
     font-size: calc(5px + 2vh);
+    @media screen and (max-width: 768px){
+        padding: 0 5vw;
+    }
+
 `
 
 const Contacts = styled.div`
@@ -25,7 +38,10 @@ const Contacts = styled.div`
     display: flex;
     justify-content: center;
     padding-top: 2vh;
-    gap: 3vw
+    gap: 3vw;
+    @media screen and (max-width: 768px){
+        padding-bottom: 3vh;
+    }
 `
 
 const ContactLink = styled(Link)`
@@ -42,7 +58,7 @@ export default function AboutMe(){
         <>
         <StyledHeading>About me</StyledHeading>
             <MainContentDiv>
-                <img src={"profile.png"} alt="profile picture" />
+                <ProfileImage src={"profile.png"} alt="profile picture" />
                 <TextDiv>
                     <p>I'm Jilliane, a Filipino-American multimedia animator from New Jersey! I am a student at the Maryland Institute College of Art (MICA) studying for a BFA in animation with a minor in illustration.</p>
                     <p>I have always been fascinated with how animation can bring anything to life. Practicing different mediums in animation helps me explore each of their strengths to tell stories, and I always aim to find ways to use these materials to improve my skills. I enjoy solving puzzles, playing games, or taking a nice hike/bike ride outdoors in my free time!</p>
