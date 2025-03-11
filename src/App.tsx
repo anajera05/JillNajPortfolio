@@ -48,7 +48,7 @@ const PageStylingDiv = styled.div`
     padding: 3vw;
     position: relative;
     box-sizing: border-box;
-    @media screen and (max-width: 750px){
+    @media screen and (max-width: 768px){
         padding: 0;
         margin: 0;
     }    
@@ -62,7 +62,7 @@ const NavDiv = styled.div`
     align-items: center;
     display: flex;
     box-sizing: border-box;
-    @media screen and (max-width: 750px){
+    @media screen and (max-width: 768px){
         height: 20%;
         width: 100%;
         justify-content: center;
@@ -79,7 +79,7 @@ const MainDiv = styled.div`
     justify-content: center;
     align-items: center;
     gap: 5vh;
-    @media screen and (max-width: 750px){
+    @media screen and (max-width: 768px){
         width: 100%;
         margin-left: 0;
         margin-top: 20%

@@ -10,7 +10,7 @@ const StyledList = styled.ul`
     margin: 0;
     top: 0;
 
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 768px) {
         position: fixed;
         width: 100%;
         height: 100%;
@@ -42,7 +42,7 @@ const StyledNavItem = styled.li`
         font-size: calc(5px + 1vh);
         font-weight: normal;
     }
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 768px) {
         padding: 5vh 2vw;
         margin: 0;
         text-align: center;
@@ -62,7 +62,7 @@ const StyledLink = styled(Link)`
 const HamburgerIcon = styled.div`
     display: none;
     z-index: 20;
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 768px) {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
