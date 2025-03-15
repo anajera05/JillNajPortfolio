@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 const VideoView = styled.img`
-    width: 80%;
+    width: 100%;
 `
 
 const Logo = styled.img`
+    width: 20%;
     @media screen and (max-width: 768px){
         padding-top: 3vh;
         width: 70%

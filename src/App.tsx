@@ -1,6 +1,6 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { createBrowserRouter, Route, RouterProvider, Routes} from "react-router";
+import { createBrowserRouter, Route, RouterProvider, Routes } from "react-router";
 import Homepage from "./components/Main/Homepage.tsx"
 import Animation from "./components/Main/Animation/Animation.tsx"
 import AnimationReel from "./components/Main/Animation/AnimationReel.tsx"
@@ -55,13 +55,14 @@ const PageStylingDiv = styled.div`
 `;
 
 const NavDiv = styled.div`
-    width: 25%;
+    width: 20%;
     position: fixed;
     height: 70%;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     display: flex;
     box-sizing: border-box;
+
     @media screen and (max-width: 768px){
         height: 20%;
         width: 100%;
@@ -79,6 +80,7 @@ const MainDiv = styled.div`
     justify-content: center;
     align-items: center;
     gap: 5vh;
+
     @media screen and (max-width: 768px){
         width: 100%;
         margin-left: 0;

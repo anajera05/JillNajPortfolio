@@ -32,7 +32,7 @@ const StyledList = styled.ul`
 const StyledNavItem = styled.li`
     margin: 2vh auto;
     display: flex;
-    font-size: calc(5px + 2vh);
+    font-size: calc(10px + 1vh);
     font-weight: bold;
     text-align: center;
     &.sub {
