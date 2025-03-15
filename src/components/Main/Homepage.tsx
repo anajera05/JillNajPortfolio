@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
-const VideoView = styled.img`
-    width: 100%;
+
+const VideoView = styled.video`
+    width: 90%;
 `
 
 const Logo = styled.img`
@@ -16,7 +17,7 @@ export default function Homepage(){
     return(
         <>
             <Logo src={"jillnaj_logo.png"} alt="jillnaj logo"/>
-            <VideoView src={"sharkkkk.jpeg"} alt="video filler"/>
+            <VideoView src={"Reel w Audio.mp4"} controls={true} poster="sharkkkk.jpeg"/>
         </>
     )
 }
